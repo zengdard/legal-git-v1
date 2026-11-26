@@ -1,0 +1,14 @@
+{
+  "id": "lg:fr:code-civil:article:1103",
+  "document_id": "lg:fr:code-civil",
+  "parent_id": "lg:fr:code-civil:livre-3",
+  "node_type": "article",
+  "label": "Article 1103",
+  "identifier": "1103",
+  "sort_order": 1103,
+  "upstream_id": null,
+  "metadata": {
+    "illustrative_only": true,
+    "note": "IDs and hierarchy shown here are examples, not verified upstream identifiers."
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Legal Git demo corpus - Code civil (fixture), release 2.
+
+  evidence="fixture": development/demo data, NOT an official Legifrance/DILA
+  dataset. Scripted changes vs demo-release-2024-06:
+  - article 1101 added (node_added);
+  - article 1104 gains a second alinea (node_changed, new immutable version;
+    the change is scripted demo data, not a claim about real law history);
+  - article 9999 (demo-only) dropped (node_removed);
+  - articles 1103 and 1105 are byte-identical to release 1 (idempotent
+    re-observation: no new versions).
+-->
+<legal-git-corpus jurisdiction="fr" slug="code-civil" title="Code civil" document-type="code" release-id="demo-release-2025-01" evidence="fixture">
+  <division type="livre" id="fr:cc:livre:III" num="III" label="Livre III" title="Des différentes manières dont on acquiert la propriété">
+    <division type="titre" id="fr:cc:titre:III" num="III" label="Titre III" title="Des contrats ou des obligations conventionnelles en général">
+      <article id="fr:cc:article:1101" num="1101" state="VIGUEUR" version-id="DEMOARTI-1101-A">
+        <text>Le contrat est un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations.</text>
+      </article>
+      <article id="fr:cc:article:1103" num="1103" state="VIGUEUR" version-id="DEMOARTI-1103-2016" valid-from="2016-10-01">
+        <text>Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits.</text>
+        <lien type="CONTEXTE" target="ordonnance-2016-131" description="Issu de l'ordonnance n° 2016-131 du 10 février 2016."/>
+      </article>
+      <article id="fr:cc:article:1104" num="1104" state="VIGUEUR" version-id="DEMOARTI-1104-B">
+        <text><![CDATA[Les contrats doivent être négociés, formés et exécutés de bonne foi.
+Cette disposition est d'ordre public.]]></text>
+      </article>
+      <article id="fr:cc:article:1105" num="1105" state="VIGUEUR" version-id="DEMOARTI-1105-2016">
+        <text>Les conventions obligent non seulement à ce qui y est exprimé, mais encore à toutes les suites que l'équité, l'usage ou la loi donnent à l'obligation d'après sa nature.</text>
+      </article>
+    </division>
+  </division>
+</legal-git-corpus>

@@ -1,0 +1,49 @@
+name: legal-git
+
+services:
+  db:
+    image: docker.io/library/postgres:16-alpine
+    environment:
+      POSTGRES_USER: legalgit
+      POSTGRES_PASSWORD: legalgit
+      POSTGRES_DB: legalgit
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U legalgit -d legalgit"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    image: legal-git-api:dev
+    build:
+      context: .
+      dockerfile: Containerfile
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      LEGALGIT_DATABASE_URL: postgresql+pg8000://legalgit:legalgit@db:5432/legalgit
+      LEGALGIT_STORAGE_DIR: /data/storage
+    volumes:
+      - objectdata:/data
+    ports:
+      - "8000:8000"
+    # Apply the schema, import the demo corpus, then serve.
+    command:
+      - sh
+      - -c
+      - |
+        alembic upgrade head
+        python -m app.ingestion.cli import-fixtures || true
+        exec uvicorn app.main:app --host 0.0.0.0 --port 8000
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/healthz')\""]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+
+  pgdata:
+  objectdata:

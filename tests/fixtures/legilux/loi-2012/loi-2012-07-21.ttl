@@ -1,0 +1,94 @@
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+@prefix ns2:	<http://data.legilux.public.lu/eli/etat/leg/loi/2012/07/21/n1/jo/> .
+ns2:graph	dcterms:modified	"2023-05-31T10:44:08.589474"^^xsd:dateTime .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix jolux:	<http://data.legilux.public.lu/resource/ontology/jolux#> .
+ns2:fr	rdf:type	jolux:Expression .
+@prefix ns5:	<http://data.legilux.public.lu/eli/etat/leg/loi/2012/07/21/n1/jo/fr/> .
+ns2:fr	jolux:isEmbodiedBy	ns5:html ,
+		ns5:pdf ,
+		ns5:docx ,
+		ns5:xml ;
+	jolux:title	"Loi du 21 juillet 2012 portant transposition de la directive 2010/24/UE du Conseil du 16 mars 2010 concernant l\u2019assistance mutuelle en mati\u00E8re de recouvrement des cr\u00E9ances relatives aux taxes, imp\u00F4ts, droits et autres mesures." .
+@prefix ns6:	<http://publications.europa.eu/resource/authority/language/> .
+ns2:fr	jolux:language	ns6:FRA ;
+	jolux:titleAlternative	"Cr\u00E9ances relatives aux taxes, imp\u00F4ts, droits" .
+ns5:html	rdf:type	jolux:Manifestation ;
+	dcterms:modified	"2023-05-31T10:44:08.311+02:00"^^xsd:dateTime ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/loi/2012/07/21/n1/jo/fr/html/eli-etat-leg-loi-2012-07-21-n1-jo-fr-html.html> .
+@prefix ns7:	<http://publications.europa.eu/resource/authority/file-type/> .
+ns5:html	jolux:format	ns7:HTML .
+@prefix ns8:	<http://data.legilux.public.lu/resource/authority/legal-institution/> .
+ns5:html	jolux:rightsHolder	ns8:ME .
+@prefix ns9:	<http://data.legilux.public.lu/resource/authority/user-format/> .
+ns5:html	jolux:userFormat	ns9:html ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> .
+@prefix ns10:	<http://data.legilux.public.lu/eli/etat/leg/memorial/2012/a149/fr/> .
+ns5:html	jolux:publishedIn	ns10:pdf ;
+	jolux:publisher	ns8:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" ;
+	jolux:previousIsExemplifiedBy	<http://data.legilux.public.lu/file/eli-etat-leg-loi-2012-07-21-n1-jo-fr-html.html> .
+ns5:pdf	rdf:type	jolux:Manifestation ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2012/a149/fr/pdf/eli-etat-leg-memorial-2012-a149-fr-pdf.pdf> ;
+	jolux:format	ns7:PDF .
+@prefix ns11:	<http://data.legilux.public.lu/resource/authority/statut-version/> .
+ns5:pdf	jolux:legalValue	ns11:officiel ;
+	jolux:rightsHolder	ns8:ME ;
+	jolux:userFormat	ns9:pdf ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> ;
+	jolux:publishedIn	ns10:pdf ;
+	jolux:publisher	ns8:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" ;
+	jolux:previousIsExemplifiedBy	<http://data.legilux.public.lu/file/eli-etat-leg-memorial-2012-149-fr-pdf.pdf> .
+ns5:xml	rdf:type	jolux:Manifestation ;
+	dcterms:modified	"2023-05-31T10:44:04.473+02:00"^^xsd:dateTime ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/loi/2012/07/21/n1/jo/fr/xml/eli-etat-leg-loi-2012-07-21-n1-jo-fr-xml.xml> ;
+	jolux:format	ns7:XML ;
+	jolux:rightsHolder	ns8:ME ;
+	jolux:userFormat	ns9:xml ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> ;
+	jolux:publishedIn	ns10:pdf ;
+	jolux:publisher	ns8:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" ;
+	jolux:previousIsExemplifiedBy	<http://data.legilux.public.lu/file/eli-etat-leg-loi-2012-07-21-n1-jo-fr-xml.xml> .
+@prefix ns12:	<http://data.legilux.public.lu/eli/etat/leg/loi/2012/07/21/n1/> .
+ns12:jo	rdf:type	jolux:Work ,
+		jolux:NationalLegalResource ,
+		jolux:LegalResource ,
+		jolux:Act ;
+	jolux:isRealizedBy	ns2:fr .
+@prefix ns13:	<http://data.legilux.public.lu/resource/authority/resource-type/> .
+ns12:jo	jolux:typeDocument	ns13:LOI .
+@prefix ns14:	<http://data.legilux.public.lu/eli/etat/leg/loi/2012/07/21/> .
+ns12:jo	jolux:isMemberOf	ns14:n1 ;
+	jolux:publicationDate	"2012-07-26"^^xsd:date .
+@prefix ns15:	<http://data.legilux.public.lu/eli/etat/leg/loi/2010/03/31/n1/> .
+ns12:jo	jolux:cites	ns15:jo ;
+	jolux:dateDocument	"2012-07-21"^^xsd:date ;
+	jolux:dateEntryInForce	"2012-01-01"^^xsd:date ;
+	jolux:historicalLegalId	"2012A1824A" .
+@prefix ns16:	<http://data.legilux.public.lu/eli/etat/leg/memorial/2012/> .
+ns12:jo	jolux:isPartOf	ns16:a149 ;
+	jolux:responsibilityOf	ns8:MFI ;
+	jolux:subjectLevel1	<http://data.legilux.public.lu/resource/authority/legal-subject/1316> ;
+	jolux:subjectLevel2	<http://data.legilux.public.lu/resource/authority/legal-subject/102> ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/3079> ;
+	jolux:transpositionProcess	<http://data.legilux.public.lu/event/etat/trans/2010/24> .
+@prefix ns17:	<http://data.legilux.public.lu/resource/authority/application-status/> .
+ns12:jo	jolux:inForceStatus	ns17:in-force .
+@prefix ns18:	<http://data.legilux.public.lu/eli/etat/leg/loi/2002/12/20/n8/> .
+ns12:jo	jolux:repeals	ns18:jo ;
+	jolux:draft	<http://data.legilux.public.lu/eli/etat/proj/pl/20110196> ;
+	jolux:initiatedBy	ns8:MFI .
+@prefix ns19:	<http://data.legilux.public.lu/eli/dir_ue/2010/24/> .
+ns12:jo	jolux:transposes	ns19:jo .
+ns5:docx	rdf:type	jolux:Manifestation ;
+	dcterms:modified	"2024-06-14T14:11:32.598+02:00"^^xsd:dateTime ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/loi/2012/07/21/n1/jo/fr/docx/eli-etat-leg-loi-2012-07-21-n1-jo-fr-docx.docx> ;
+	jolux:format	ns7:DOCX ;
+	jolux:rightsHolder	ns8:ME ;
+	jolux:userFormat	ns9:docx ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> ;
+	jolux:publisher	ns8:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" .

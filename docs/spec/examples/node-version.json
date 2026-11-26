@@ -1,0 +1,21 @@
+{
+  "id": "lgv:fr:cc:article-1103:example-v1",
+  "node_id": "lg:fr:code-civil:article:1103",
+  "source_id": "legifrance",
+  "ingestion_run_id": "ingest-example",
+  "upstream_version_id": null,
+  "content": "Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits.",
+  "content_format": "plain_text",
+  "content_hash": "sha256:REPLACE_WITH_REAL_HASH",
+  "representation_id": "plain-text-v1",
+  "valid_from": null,
+  "valid_to": null,
+  "published_at": null,
+  "effective_from": null,
+  "effective_to": null,
+  "ingested_at": "2026-01-01T12:00:00Z",
+  "metadata": {
+    "illustrative_only": true,
+    "note": "Content and dates are examples. Production values must come from the source."
+  }
+}

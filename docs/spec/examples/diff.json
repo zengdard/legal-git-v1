@@ -1,0 +1,19 @@
+{
+  "node_id": "lg:fr:example:article:12",
+  "from_version_id": "lgv:example:v1",
+  "to_version_id": "lgv:example:v2",
+  "algorithm": "character-range-diff-v1",
+  "representation_id": "plain-text-v1",
+  "changes": [
+    {
+      "operation": "replace",
+      "old_start": 30,
+      "old_end": 35,
+      "new_start": 30,
+      "new_end": 36,
+      "old_text": "50",
+      "new_text": "100"
+    }
+  ],
+  "illustrative_only": true
+}

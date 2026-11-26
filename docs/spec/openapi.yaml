@@ -1,0 +1,343 @@
+openapi: 3.1.0
+info:
+  title: Legal Git API
+  version: 1.0.0
+  description: Structured, hierarchical and versioned legal-document data for developers.
+servers:
+  - url: /v1
+paths:
+  /documents:
+    get:
+      summary: List documents
+      parameters:
+        - in: query
+          name: jurisdiction
+          schema: { type: string }
+        - in: query
+          name: document_type
+          schema: { type: string }
+        - in: query
+          name: source_id
+          schema: { type: string }
+        - in: query
+          name: q
+          schema: { type: string }
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+        - in: query
+          name: cursor
+          schema: { type: string }
+      responses:
+        "200":
+          description: Paginated document list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaginatedDocuments"
+  /documents/{document_id}:
+    get:
+      summary: Get a document
+      parameters:
+        - $ref: "#/components/parameters/DocumentId"
+      responses:
+        "200":
+          description: Document
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Document"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /documents/{document_id}/tree:
+    get:
+      summary: Get the document hierarchy
+      parameters:
+        - $ref: "#/components/parameters/DocumentId"
+      responses:
+        "200":
+          description: Document tree
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DocumentTree"
+  /nodes/{node_id}:
+    get:
+      summary: Get a node
+      parameters:
+        - $ref: "#/components/parameters/NodeId"
+      responses:
+        "200":
+          description: Node
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Node"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /nodes/{node_id}/versions:
+    get:
+      summary: List versions of a node
+      parameters:
+        - $ref: "#/components/parameters/NodeId"
+      responses:
+        "200":
+          description: Node versions
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/NodeVersionSummary" }
+  /nodes/{node_id}/versions/{version_id}:
+    get:
+      summary: Get a specific node version
+      parameters:
+        - $ref: "#/components/parameters/NodeId"
+        - in: path
+          name: version_id
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Node version
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NodeVersion"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /nodes/{node_id}/diff:
+    get:
+      summary: Compare two versions of a node
+      parameters:
+        - $ref: "#/components/parameters/NodeId"
+        - in: query
+          name: from
+          required: true
+          schema: { type: string }
+        - in: query
+          name: to
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Version diff
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NodeDiff"
+  /sources:
+    get:
+      summary: List sources
+      responses:
+        "200":
+          description: Sources
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/Source" }
+  /sources/{source_id}:
+    get:
+      summary: Get source metadata
+      parameters:
+        - in: path
+          name: source_id
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Source
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Source"
+        "404":
+          $ref: "#/components/responses/NotFound"
+  /node-versions/{version_id}/fragment:
+    get:
+      summary: Retrieve a version-scoped text fragment
+      parameters:
+        - in: path
+          name: version_id
+          required: true
+          schema: { type: string }
+        - in: query
+          name: start
+          required: true
+          schema: { type: integer, minimum: 0 }
+        - in: query
+          name: end
+          required: true
+          schema: { type: integer, minimum: 0 }
+        - in: query
+          name: representation
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Fragment
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Fragment"
+        "400":
+          description: Invalid range or representation
+components:
+  parameters:
+    DocumentId:
+      in: path
+      name: document_id
+      required: true
+      schema: { type: string }
+    NodeId:
+      in: path
+      name: node_id
+      required: true
+      schema: { type: string }
+  responses:
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+  schemas:
+    Error:
+      type: object
+      required: [code, message]
+      properties:
+        code: { type: string }
+        message: { type: string }
+        details: { type: object, additionalProperties: true }
+    Source:
+      type: object
+      required: [id, name, jurisdiction]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        publisher: { type: [string, "null"] }
+        jurisdiction: { type: string }
+        source_type: { type: string }
+        base_uri: { type: [string, "null"], format: uri }
+        licence_name: { type: [string, "null"] }
+        licence_uri: { type: [string, "null"], format: uri }
+    Document:
+      type: object
+      required: [id, jurisdiction, document_type, title]
+      properties:
+        id: { type: string }
+        jurisdiction: { type: string }
+        document_type: { type: string }
+        title: { type: string }
+        official_identifier: { type: [string, "null"] }
+        source_id: { type: string }
+        upstream_id: { type: [string, "null"] }
+        publication_date: { type: [string, "null"], format: date }
+        promulgation_date: { type: [string, "null"], format: date }
+        status: { type: [string, "null"] }
+        metadata: { type: object, additionalProperties: true }
+    Node:
+      type: object
+      required: [id, document_id, node_type, sort_order]
+      properties:
+        id: { type: string }
+        document_id: { type: string }
+        parent_id: { type: [string, "null"] }
+        node_type: { type: string }
+        label: { type: [string, "null"] }
+        identifier: { type: [string, "null"] }
+        sort_order: { type: integer }
+        upstream_id: { type: [string, "null"] }
+        metadata: { type: object, additionalProperties: true }
+    NodeVersionSummary:
+      type: object
+      required: [id, node_id, content_hash, ingested_at]
+      properties:
+        id: { type: string }
+        node_id: { type: string }
+        content_hash: { type: string }
+        valid_from: { type: [string, "null"], format: date }
+        valid_to: { type: [string, "null"], format: date }
+        published_at: { type: [string, "null"], format: date }
+        effective_from: { type: [string, "null"], format: date }
+        effective_to: { type: [string, "null"], format: date }
+        ingested_at: { type: string, format: date-time }
+    NodeVersion:
+      allOf:
+        - $ref: "#/components/schemas/NodeVersionSummary"
+        - type: object
+          required: [source_id, content, content_format, representation_id]
+          properties:
+            source_id: { type: string }
+            ingestion_run_id: { type: string }
+            upstream_version_id: { type: [string, "null"] }
+            content: { type: string }
+            content_format: { type: string }
+            representation_id: { type: string }
+            provenance: { type: object, additionalProperties: true }
+            metadata: { type: object, additionalProperties: true }
+    DocumentTree:
+      type: object
+      required: [document_id, roots]
+      properties:
+        document_id: { type: string }
+        roots:
+          type: array
+          items:
+            $ref: "#/components/schemas/TreeNode"
+    TreeNode:
+      allOf:
+        - $ref: "#/components/schemas/Node"
+        - type: object
+          properties:
+            children:
+              type: array
+              items: { $ref: "#/components/schemas/TreeNode" }
+    NodeDiff:
+      type: object
+      required: [node_id, from_version_id, to_version_id, algorithm, changes]
+      properties:
+        node_id: { type: string }
+        from_version_id: { type: string }
+        to_version_id: { type: string }
+        algorithm: { type: string }
+        representation_id: { type: string }
+        changes:
+          type: array
+          items:
+            type: object
+            required: [operation]
+            properties:
+              operation: { type: string, enum: [insert, delete, replace] }
+              old_start: { type: [integer, "null"] }
+              old_end: { type: [integer, "null"] }
+              new_start: { type: [integer, "null"] }
+              new_end: { type: [integer, "null"] }
+              old_text: { type: [string, "null"] }
+              new_text: { type: [string, "null"] }
+    Fragment:
+      type: object
+      required: [version_id, representation_id, offset_unit, start, end, text]
+      properties:
+        version_id: { type: string }
+        representation_id: { type: string }
+        offset_unit: { type: string, enum: [unicode_code_point] }
+        start: { type: integer }
+        end: { type: integer }
+        text: { type: string }
+    PaginatedDocuments:
+      type: object
+      required: [items, has_more]
+      properties:
+        items:
+          type: array
+          items: { $ref: "#/components/schemas/Document" }
+        next_cursor: { type: [string, "null"] }
+        has_more: { type: boolean }

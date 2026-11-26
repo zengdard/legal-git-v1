@@ -1,0 +1,160 @@
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+@prefix ns2:	<http://data.legilux.public.lu/eli/etat/leg/loi/2010/03/31/n1/jo/> .
+ns2:graph	dcterms:modified	"2026-04-09T10:16:47.272+02:00"^^xsd:dateTime .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix jolux:	<http://data.legilux.public.lu/resource/ontology/jolux#> .
+ns2:fr	rdf:type	jolux:Expression .
+@prefix ns5:	<http://data.legilux.public.lu/eli/etat/leg/loi/2010/03/31/n1/jo/fr/> .
+ns2:fr	jolux:isEmbodiedBy	ns5:docx ,
+		ns5:html ,
+		ns5:pdf ,
+		ns5:xml ;
+	jolux:title	"Loi du 31 mars 2010 portant\\n1. approbation de la Convention entre le Grand-Duch\u00E9 de Luxembourg et le Royaume du Bahre\u00EFn tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, ainsi que de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 6 mai 2009;\\n2. approbation de la Convention entre le Gouvernement du Grand-Duch\u00E9 de Luxembourg et le Gouvernement de la R\u00E9publique d'Arm\u00E9nie tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune et du Protocole, ainsi que de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 23 juin 2009;\\n3. approbation de la Convention entre le Gouvernement du Grand-Duch\u00E9 de Luxembourg et le Gouvernement de l'Etat du Qatar tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune et du Protocole, ainsi que de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 3 juillet 2009;\\n4. approbation de la Convention entre le Grand-Duch\u00E9 de Luxembourg et la Principaut\u00E9 de Monaco tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, ainsi que de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 27 juillet 2009;\\n5. approbation de la Convention entre le Grand-Duch\u00E9 de Luxembourg et la Principaut\u00E9 de Liechtenstein tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, ainsi que de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Vaduz, le 26 ao\u00FBt 2009;\\n6. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 20 mai 2009, modifiant la Convention entre le Gouvernement du Grand-Duch\u00E9 de Luxembourg et le Gouvernement des Etats-Unis d'Am\u00E9rique tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Luxembourg, le 3 avril 1996;\\n7. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 La Haye, le 29 mai 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et le Royaume des Pays-Bas tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir l'\u00E9vasion fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 La Haye, le 8 mai 1968;\\n8. approbation de l'Avenant et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Paris, le 3 juin 2009, \u00E0 la Convention entre le Grand-Duch\u00E9 de Luxembourg et la France tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 \u00E9tablir des r\u00E8gles d'assistance administrative r\u00E9ciproque en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Paris, le 1er avril 1958, modifi\u00E9e par un Avenant sign\u00E9 \u00E0 Paris le 8 septembre 1970 et par un Avenant sign\u00E9 \u00E0 Luxembourg le 24 novembre 2006;\\n9. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 4 juin 2009, modifiant la Convention entre le Gouvernement du Grand-Duch\u00E9 de Luxembourg et le Gouvernement du Royaume de Danemark tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 \u00E9tablir des r\u00E8gles d'assistance administrative r\u00E9ciproque en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Luxembourg, le 17 novembre 1980;\\n10. approbation de l'Avenant et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 1er juillet 2009, en vue de modifier la Convention entre le Luxembourg et la Finlande tendant \u00E0 \u00E9viter les doubles impositions en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Luxembourg, le 1er mars 1982;\\n11. approbation du Troisi\u00E8me Avenant et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Londres, le 2 juillet 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et le Royaume-Uni de Grande-Bretagne et d'Irlande du Nord tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir l'\u00E9vasion fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Londres, le 24 mai 1967;\\n12. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Bruxelles, le 7 juillet 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et la R\u00E9publique d'Autriche tendant \u00E0 \u00E9viter les doubles impositions en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Luxembourg, le 18 octobre 1962;\\n13. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Bruxelles, le 7 juillet 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et le Royaume de Norv\u00E8ge tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir l'\u00E9vasion fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, le Protocole final et le Protocole additionnel y relatifs, sign\u00E9s \u00E0 Oslo, le 6 mai 1983;\\n14. approbation de l'Avenant et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Bruxelles, le 16 juillet 2009, \u00E0 la Convention entre le Grand-Duch\u00E9 de Luxembourg et le Royaume de Belgique en vue d'\u00E9viter les doubles impositions et de r\u00E9gler certaines autres questions en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune et le Protocole final y relatif, sign\u00E9s \u00E0 Luxembourg, le 17 septembre 1970, tels que modifi\u00E9s par l'Avenant, sign\u00E9 \u00E0 Bruxelles, le 11 d\u00E9cembre 2002;\\n15. approbation de l'Avenant, sign\u00E9 \u00E0 Berne, le 25 ao\u00FBt 2009, modifiant la Convention entre le GrandDuch\u00E9 de Luxembourg et la Conf\u00E9d\u00E9ration Suisse en vue d'\u00E9viter les doubles impositions en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Berne, le 21 janvier 1993;\\n16. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 28 ao\u00FBt 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et la R\u00E9publique d'Islande tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Luxembourg, le 4 octobre 1999;\\n17. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Luxembourg, le 30 septembre 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et la R\u00E9publique de Turquie tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune et du Protocole y relatif, sign\u00E9s \u00E0 Ankara, le 9 juin 2003;\\n18. approbation du Protocole, sign\u00E9 \u00E0 Luxembourg, le 7 octobre 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et les Etats-Unis Mexicains tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 pr\u00E9venir la fraude fiscale en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune, sign\u00E9e \u00E0 Luxembourg, le 7 f\u00E9vrier 2001;\\n19. approbation du Protocole et de l'\u00E9change de lettres y relatif, sign\u00E9s \u00E0 Bruxelles, le 10 novembre 2009, modifiant la Convention entre le Grand-Duch\u00E9 de Luxembourg et le Royaume d'Espagne tendant \u00E0 \u00E9viter les doubles impositions en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune et \u00E0 pr\u00E9venir la fraude et l'\u00E9vasion fiscales, sign\u00E9e \u00E0 Madrid, le 3 juin 1986;\\n20. approbation du Protocole, sign\u00E9 \u00E0 Luxembourg, le 11 d\u00E9cembre 2009, modifiant la Convention du 23 ao\u00FBt 1958 entre le Grand-Duch\u00E9 de Luxembourg et la R\u00E9publique F\u00E9d\u00E9rale d'Allemagne tendant \u00E0 \u00E9viter les doubles impositions et \u00E0 \u00E9tablir des r\u00E8gles d'assistance administrative r\u00E9ciproque en mati\u00E8re d'imp\u00F4ts sur le revenu et sur la fortune et en mati\u00E8re d'imp\u00F4t commercial et d'imp\u00F4t foncier\\net pr\u00E9voyant la proc\u00E9dure y applicable en mati\u00E8re d'\u00E9change de renseignements sur demande." .
+@prefix ns6:	<http://publications.europa.eu/resource/authority/language/> .
+ns2:fr	jolux:language	ns6:FRA ;
+	jolux:titleShort	"Loi du 31 mars 2010 portant approbation des conventions fiscales et pr\u00E9voyant la proc\u00E9dure y applicable en mati\u00E8re d'\u00E9change de renseignements sur demande." .
+ns5:pdf	rdf:type	jolux:Manifestation ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2010/a51/fr/pdf/eli-etat-leg-memorial-2010-a51-fr-pdf.pdf> .
+@prefix ns7:	<http://publications.europa.eu/resource/authority/file-type/> .
+ns5:pdf	jolux:format	ns7:PDF .
+@prefix ns8:	<http://data.legilux.public.lu/resource/authority/statut-version/> .
+ns5:pdf	jolux:legalValue	ns8:officiel .
+@prefix ns9:	<http://data.legilux.public.lu/resource/authority/legal-institution/> .
+ns5:pdf	jolux:rightsHolder	ns9:ME .
+@prefix ns10:	<http://data.legilux.public.lu/resource/authority/user-format/> .
+ns5:pdf	jolux:userFormat	ns10:pdf ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> ;
+	jolux:publisher	ns9:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" ;
+	jolux:previousIsExemplifiedBy	<http://data.legilux.public.lu/file/eli-etat-leg-memorial-2010-51-fr-pdf.pdf> .
+ns5:html	rdf:type	jolux:Manifestation ;
+	dcterms:modified	"2024-02-16T14:38:23.995+01:00"^^xsd:dateTime ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/loi/2010/03/31/n1/jo/fr/html/eli-etat-leg-loi-2010-03-31-n1-jo-fr-html.html> ;
+	jolux:format	ns7:HTML ;
+	jolux:rightsHolder	ns9:ME ;
+	jolux:userFormat	ns10:html ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> ;
+	jolux:publisher	ns9:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" .
+ns5:docx	rdf:type	jolux:Manifestation ;
+	dcterms:modified	"2024-06-14T15:21:19.795+02:00"^^xsd:dateTime ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/loi/2010/03/31/n1/jo/fr/docx/eli-etat-leg-loi-2010-03-31-n1-jo-fr-docx.docx> ;
+	jolux:format	ns7:DOCX ;
+	jolux:rightsHolder	ns9:ME ;
+	jolux:userFormat	ns10:docx ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> ;
+	jolux:publisher	ns9:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" .
+@prefix ns11:	<http://data.legilux.public.lu/eli/etat/leg/loi/2010/03/31/n1/> .
+ns11:jo	rdf:type	jolux:Act ,
+		jolux:Work ,
+		jolux:NationalLegalResource ,
+		jolux:LegalResource ;
+	jolux:isRealizedBy	ns2:fr .
+@prefix ns12:	<http://data.legilux.public.lu/resource/authority/draft-status/> .
+ns11:jo	jolux:statusDraft	ns12:publie .
+@prefix ns13:	<http://data.legilux.public.lu/resource/authority/resource-type/> .
+ns11:jo	jolux:typeDocument	ns13:LOI .
+@prefix ns14:	<http://data.legilux.public.lu/eli/etat/leg/loi/2010/03/31/> .
+ns11:jo	jolux:isMemberOf	ns14:n1 ;
+	jolux:publicationDate	"2010-04-06"^^xsd:date .
+@prefix ns15:	<http://data.legilux.public.lu/eli/etat/leg/loi/1992/03/19/n1/> .
+ns11:jo	jolux:cites	ns15:jo .
+@prefix ns16:	<http://data.legilux.public.lu/eli/etat/leg/loi/1983/12/01/n1/> .
+ns11:jo	jolux:cites	ns16:jo .
+@prefix ns17:	<http://data.legilux.public.lu/eli/etat/leg/loi/2003/12/17/n2/> .
+ns11:jo	jolux:cites	ns17:jo .
+@prefix ns18:	<http://data.legilux.public.lu/eli/etat/leg/loi/2009/06/05/n5/> .
+ns11:jo	jolux:cites	ns18:jo .
+@prefix ns19:	<http://data.legilux.public.lu/eli/etat/leg/loi/1992/07/21/n2/> .
+ns11:jo	jolux:cites	ns19:jo .
+@prefix ns20:	<http://data.legilux.public.lu/eli/etat/leg/loi/1978/07/11/n2/> .
+ns11:jo	jolux:cites	ns20:jo .
+@prefix ns21:	<http://data.legilux.public.lu/eli/etat/leg/loi/1980/03/12/n2/> .
+ns11:jo	jolux:cites	ns21:jo .
+@prefix ns22:	<http://data.legilux.public.lu/eli/etat/leg/loi/1993/07/07/n1/> .
+ns11:jo	jolux:cites	ns22:jo .
+@prefix ns23:	<http://data.legilux.public.lu/eli/etat/leg/loi/2007/11/21/n2/> .
+ns11:jo	jolux:cites	ns23:jo .
+@prefix ns24:	<http://data.legilux.public.lu/eli/etat/leg/loi/1971/07/27/n4/> .
+ns11:jo	jolux:cites	ns24:jo ;
+	jolux:dateDocument	"2010-03-31"^^xsd:date ;
+	jolux:dateEntryInForce	"2012-01-01"^^xsd:date ;
+	jolux:historicalLegalId	"2010A0830A" .
+@prefix ns25:	<http://data.legilux.public.lu/eli/etat/leg/memorial/2010/> .
+ns11:jo	jolux:isPartOf	ns25:a51 ;
+	jolux:responsibilityOf	ns9:MFI ;
+	jolux:subjectLevel1	<http://data.legilux.public.lu/resource/authority/legal-subject/259> .
+@prefix ns26:	<http://publications.europa.eu/resource/authority/country/> .
+ns11:jo	jolux:subjectLevel2	ns26:LIE ,
+		ns26:MCO ,
+		ns26:MEX ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/3616> ,
+		ns26:BHR ,
+		ns26:CHE ,
+		ns26:ARM ,
+		ns26:AUT ,
+		ns26:BEL ,
+		ns26:DEU ,
+		ns26:DNK ,
+		ns26:USA ,
+		ns26:TUR ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/52> ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/38> ,
+		ns26:NOR ,
+		ns26:ESP ,
+		ns26:QAT ,
+		ns26:FIN ,
+		ns26:FRA ,
+		ns26:GBR ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/1621> ,
+		ns26:NLD ,
+		ns26:ISL ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/1447> ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/367> ,
+		<http://data.legilux.public.lu/resource/authority/legal-subject/3278> .
+@prefix ns27:	<http://data.legilux.public.lu/resource/authority/application-status/> .
+ns11:jo	jolux:inForceStatus	ns27:in-force .
+@prefix ns28:	<http://data.legilux.public.lu/eli/etat/leg/loi/1982/11/25/n1/> .
+ns11:jo	jolux:modifies	ns28:jo .
+@prefix ns29:	<http://data.legilux.public.lu/eli/etat/leg/loi/1968/02/20/n2/> .
+ns11:jo	jolux:modifies	ns29:jo .
+@prefix ns30:	<http://data.legilux.public.lu/eli/etat/leg/loi/2004/05/27/n2/> .
+ns11:jo	jolux:modifies	ns30:jo .
+@prefix ns31:	<http://data.legilux.public.lu/eli/etat/leg/loi/1982/02/19/n1/> .
+ns11:jo	jolux:modifies	ns31:jo .
+@prefix ns32:	<http://data.legilux.public.lu/eli/etat/leg/loi/1987/03/20/n1/> .
+ns11:jo	jolux:modifies	ns32:jo .
+@prefix ns33:	<http://data.legilux.public.lu/eli/etat/leg/loi/1984/12/13/n1/> .
+ns11:jo	jolux:modifies	ns33:jo .
+@prefix ns34:	<http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n2/> .
+ns11:jo	jolux:modifies	ns34:jo .
+@prefix ns35:	<http://data.legilux.public.lu/eli/etat/leg/loi/1959/08/17/n2/> .
+ns11:jo	jolux:modifies	ns35:jo .
+@prefix ns36:	<http://data.legilux.public.lu/eli/etat/leg/loi/1963/08/05/n3/> .
+ns11:jo	jolux:modifies	ns36:jo .
+@prefix ns37:	<http://data.legilux.public.lu/eli/etat/leg/loi/1971/08/14/n1/> .
+ns11:jo	jolux:modifies	ns37:jo .
+@prefix ns38:	<http://data.legilux.public.lu/eli/etat/leg/loi/1969/05/30/n1/> .
+ns11:jo	jolux:modifies	ns38:jo .
+@prefix ns39:	<http://data.legilux.public.lu/eli/etat/leg/loi/1999/03/05/n1/> .
+ns11:jo	jolux:modifies	ns39:jo .
+@prefix ns40:	<http://data.legilux.public.lu/eli/etat/leg/loi/1993/12/16/n1/> .
+ns11:jo	jolux:modifies	ns40:jo .
+@prefix ns41:	<http://data.legilux.public.lu/eli/etat/leg/loi/1959/08/17/n3/> .
+ns11:jo	jolux:modifies	ns41:jo .
+@prefix ns42:	<http://data.legilux.public.lu/eli/etat/leg/loi/2001/12/21/n8/> .
+ns11:jo	jolux:modifies	ns42:jo ;
+	jolux:draft	<http://data.legilux.public.lu/eli/etat/proj/pl/20090182> ;
+	jolux:initiatedBy	ns9:MFI ;
+	jolux:urgentEvent	0 .
+ns5:xml	rdf:type	jolux:Manifestation ;
+	dcterms:modified	"2024-02-16T14:38:11.640+01:00"^^xsd:dateTime ;
+	jolux:isExemplifiedBy	<http://data.legilux.public.lu/filestore/eli/etat/leg/loi/2010/03/31/n1/jo/fr/xml/eli-etat-leg-loi-2010-03-31-n1-jo-fr-xml.xml> ;
+	jolux:format	ns7:XML ;
+	jolux:rightsHolder	ns9:ME ;
+	jolux:userFormat	ns10:xml ;
+	jolux:license	<http://creativecommons.org/licenses/by/4.0/> ;
+	jolux:publisher	ns9:ME ;
+	jolux:rights	"Copyright : Minist\u00E8re d'\u00C9tat du Grand-Duch\u00E9 de Luxembourg - Service central de l\u00E9gislation" .

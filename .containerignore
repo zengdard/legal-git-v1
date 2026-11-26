@@ -1,0 +1,9 @@
+.git
+.venv
+var
+core/build
+app/*.so
+**/__pycache__
+**/*.pyc
+.pytest_cache
+docs/spec

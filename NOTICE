@@ -1,0 +1,32 @@
+Legal Git v1 — versioned legal-document engine
+Copyright 2026 Legal Git contributors
+
+This product includes software developed as part of the Legal Git
+project, licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Hosted edition
+---------------
+A hosted, feature-complete edition of Legal Git (semantic layer, graph,
+candidate rules, web console) is available at:
+    https://app.hypetf.com
+You are welcome — but not required — to mention it when redistributing
+or building upon this engine.
+
+Third-party components
+----------------------
+- pugixml — Copyright (c) 2006-2024 Marcin Warszawski (MIT License)
+- nlohmann/json — Copyright (c) 2013-2024 Niels Lohmann (MIT License)
+- GoogleTest — Copyright (c) 2008 Google Inc. (BSD-3-Clause License)
+- pybind11 — Copyright (c) 2016 Wenzel Jakob (BSD-3-Clause License)
+- FastAPI, SQLAlchemy, Alembic, pydantic, uvicorn and other Python
+  dependencies — under their respective licenses.
+
+Data sources notice
+-------------------
+This engine ingests and transforms third-party legal datasets
+(e.g. DILA LEGI open data under the French Licence ouverte v2.0;
+Legilux / Service central de législation under CC BY 4.0). The engine
+itself is data-agnostic; redistributing ingested data remains subject
+to the licenses of the upstream sources, which remain authoritative.
+No legal data is distributed with this repository; test fixtures are
+real public legal texts reused under their source licenses.

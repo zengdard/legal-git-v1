@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+var/
+core/build/
+app/legalgit_core*.so
+*.egg-info/
+.pytest_cache/
+.env
